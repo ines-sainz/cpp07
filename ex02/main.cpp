@@ -29,16 +29,23 @@ int main(int, char**)
     {
         Array<int> tmp = numbers;
         Array<int> test(tmp);
+        std::cout << "test[0]: " << test[0] << std::endl;
+        std::cout << "tmp[0]: " << tmp[0] << std::endl;
+        test[0] = 2;
+        std::cout << "2test[0]: " << test[0] << std::endl;
+        std::cout << "2tmp[0]: " << tmp[0] << std::endl;
     }
 
     for (int i = 0; i < MAX_VAL; i++)
     {
+        std::cout << numbers[i] << " ";
         if (mirror[i] != numbers[i])
         {
             std::cerr << "didn't save the same value!!" << std::endl;
             return 1;
         }
     }
+    std::cout << "\n";
     try
     {
         numbers[-2] = 0;

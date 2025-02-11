@@ -29,7 +29,7 @@ class Array
 			public:
 				const char* what() const throw()
 				{
-					return ("Index Out Of Boundspp");
+					return ("Index Out Of Bounds");
 				}
 		};
 		T& operator[](int index);
