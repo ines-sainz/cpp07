@@ -38,7 +38,6 @@ Array<T>& Array<T>::operator=( const Array<T> &before )
 	int i = 0;
 	if (before.array)
 	{
-    	std::cout << "HOLA" << std::endl;
 		this->array = new T[before.size()];
 		while (before.array[i])
 		{
